@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/bootstrap.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a id="logo">
+                            <i class="fa-solid fa-computer"></i>
+                            <p>CryptoBros</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="navigation">
+                        <ul class="menu">
+                            <li><a href="/market">Market</a></li>
+                            <li><a href="/dashboard">Your account</a></li>
+                            <li><a href="/wallet">Your Wallet</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="navigation">
+                        <ul class="menu">
+                            <li><a href="/logout">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="content">
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <h1>Welcome, <%= username %>!</h1>
+        </header>
+        <div class="dashboard-content">
+            <div class="card profile-card">
+                <h2>Profile Info</h2>
+                <p><%= profile_info %></p>
+            </div>
+            <div class="card funds-card">
+                <h2>Funds</h2>
+                <p><%= funds %></p>
+            </div>
+            <div class="card actions-card">
+                <h2>Quick Actions</h2>
+                <ul>
+                    <li><a href="#">View Transactions</a></li>
+                    <li><a href="#">Add Funds</a></li>
+                    <li><a href="#">Update Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="copyright">
+                        All rights reserved © CRYPTOBROS
+                    </div>
+                </div>
+                <div class="col-md-4 contact-info">
+                    <p>Bulevardul Metalurgiei</p>
+                    <p>|</p>
+                    <p>07xxxxxxxx</p>
+                    <p>|</p>
+                    <p>contact@007cryptobros.com</p>
+                </div>
+                <div class="col-md-4 contact-info">
+                    <p>Authorised Crypto Stock Market</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
